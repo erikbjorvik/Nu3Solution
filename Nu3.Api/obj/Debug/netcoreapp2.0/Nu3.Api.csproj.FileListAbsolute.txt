@@ -1,0 +1,12 @@
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/bin/Debug/netcoreapp2.0/libe_sqlite3.dylib
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/bin/Debug/netcoreapp2.0/Nu3.Api.deps.json
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/bin/Debug/netcoreapp2.0/Nu3.Api.runtimeconfig.json
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/bin/Debug/netcoreapp2.0/Nu3.Api.runtimeconfig.dev.json
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/bin/Debug/netcoreapp2.0/Nu3.Api.dll
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/bin/Debug/netcoreapp2.0/Nu3.Api.pdb
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/obj/Debug/netcoreapp2.0/Nu3.Api.csproj.CoreCompileInputs.cache
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/obj/Debug/netcoreapp2.0/Nu3.Api.AssemblyInfoInputs.cache
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/obj/Debug/netcoreapp2.0/Nu3.Api.AssemblyInfo.cs
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/obj/Debug/netcoreapp2.0/Nu3.Api.dll
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/obj/Debug/netcoreapp2.0/Nu3.Api.pdb
+/Users/erikbjorvik/Projects/Nu3/Nu3.Api/obj/Debug/netcoreapp2.0/Nu3.Api.csprojResolveAssemblyReference.cache

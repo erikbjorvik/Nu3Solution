@@ -1,0 +1,94 @@
+﻿@model Nu3Core.Models.Consumable
+@{
+    ViewBag.Title = "Consumable details";
+}
+
+<div class="row" style="margin-bottom:20px">
+    <div class="col-md-6">
+		<h2>Consumable details</h2>
+    </div>
+    <div class="col-md-6" style="text-align:right">
+		<a href="@Url.Action("Index", "Consumables")">
+        <button type="button" class="btn btn-outline-success">
+		<i class="fas fa-chevron-circle-left"></i> Back to consumable list</button></a>
+        
+</div>
+    </div>
+    <div class="row">
+	<div class="col-md-6">
+        <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>General data</th>
+            <th></th>
+        </tr>
+            </thead>
+        <tr>
+            <td>Name</td>
+            <td><span class="data-txt">@Model.Name</span></td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td><span class="data-txt">@Model.Type</span></td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td><span class="data-txt">@Model.MealCategory</span></td>
+        </tr>
+        <tr>
+            <td>Default unit</td>
+            <td><span class="data-txt">@Model.DefaultUnit</span></td>
+        </tr>
+        
+        </table>
+	</div>
+
+	<div class="col-md-6">
+        <table class="table table-striped">
+        <thead>	
+        <tr>
+            <th>Nutritional data</th>
+			<th></th>
+        </tr>
+            </thead>
+		<tr>
+            <td>Kilo calories</td>
+            <td><span class="data-txt">@Model.Nutrients.Kilocalories kcal</span></td>
+        </tr>
+        <tr>
+            <td>Water</td>
+            <td><span class="data-txt">@Model.Nutrients.Water %</span></td>
+        </tr>
+        <tr>
+            <td>Edible part</td>
+            <td><span class="data-txt">@Model.Nutrients.EdiblePart %</span></td>
+        </tr>
+        <tr>
+            <td>Fibre</td>
+            <td><span class="data-txt">@Model.Nutrients.DietaryFibre g</span></td>
+        </tr>
+        <tr>
+            <td>Fat</td>
+            <td><span class="data-txt">@Model.Nutrients.Fat g</span></td>
+        </tr>
+		<tr>
+            <td>Carbohydrate</td>
+            <td><span class="data-txt">@Model.Nutrients.Carbohydrate g</span></td>
+        </tr>
+		<tr>
+            <td>Vitamins</td>
+            <td><span class="data-txt">
+			    @if (@Model.Nutrients.Vitamins!=null) {
+						foreach (var nutrient in @Model.Nutrients.Vitamins) {
+                    @nutrient <text>, </text> 
+                }
+						}
+				
+
+				</span></td>
+        </tr>
+        
+        </table>
+	</div>
+</div>
+

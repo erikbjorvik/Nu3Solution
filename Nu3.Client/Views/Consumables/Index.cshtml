@@ -1,0 +1,50 @@
+﻿@model Nu3.Client.Models.ConsumableViewModel;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12"><h2>Consumables</h2></div>
+</div>
+<div class="row" style="margin-bottom:20px">
+    <div class="col-md-6">
+		<a href="@Url.Action("Add", "Consumables")">
+        <button type="button" class="btn btn-outline-success">Add consumable</button>
+		</a>
+    </div>
+    <div class="col-md-6" style="text-align:right">
+        <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search for consumable" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  </div>
+</div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Category</th>
+        <th>Edit</th>
+    </tr>
+    @foreach(var consumable in @Model.Consumables) {
+	<tr>
+        <td>
+            <span class="data-txt">@consumable.Name</span>
+        </td>
+        <td>
+            <span class="data-txt">@consumable.Type</span>
+        </td>
+        <td>
+            <span class="data-txt">@consumable.MealCategory</span>
+        </td>
+        <td>
+           <a href="@Url.Action("Edit","Consumables", new { id = consumable.Id })"><i class="fas fa-edit"></i> Details</a>
+        </td>
+    </tr>
+	}
+    
+</table>

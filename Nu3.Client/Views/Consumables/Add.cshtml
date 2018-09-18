@@ -1,0 +1,166 @@
+﻿@model Nu3Core.Models.Consumable
+@{
+    ViewBag.Title = "Add consumable";
+}
+
+<div class="row" style="margin-bottom:20px">
+    <div class="col-md-6">
+        <h2>Add consumable</h2>
+    </div>
+    <div class="col-md-6" style="text-align:right">
+        <a href="@Url.Action("Index", "Consumables")">
+        <button type="button" class="btn btn-outline-success">
+        <i class="fas fa-chevron-circle-left"></i> Back to consumable list</button></a>
+        
+</div>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>General data</th>
+            <th></th>
+        </tr>
+        </thead>
+		@using (Html.BeginForm("Add", "Consumables", FormMethod.Post)) {
+        <tr>
+            <td><div style="margin-top:6px">Name</div></td>
+            <td>@Html.TextBoxFor(m => m.Name, new {@class="form-control"})</td>
+        </tr>
+		<tr>
+            <td><div style="margin-top:6px">Type</div></td>
+            <td>
+
+            @Html.DropDownListFor(m => m.Type, new List<SelectListItem> {
+                new SelectListItem
+            {
+                Text = "Drink",
+                Value = "0"
+            },
+                new SelectListItem
+            {
+                Text = "Food",
+                Value = "1",
+            }
+            }, "Select food type", new {@class="form-control"})
+			</td>
+        </tr>
+
+		<tr>
+            <td><div style="margin-top:6px">Meal category</div></td>
+            <td>       
+            @Html.DropDownListFor(m => m.MealCategory, new List<SelectListItem> {
+                new SelectListItem
+            {
+                Text = "Breakfast",
+                Value = "0"
+            },new SelectListItem
+            {
+                Text = "Lunch",
+                Value = "1",
+            },new SelectListItem
+            {
+                Text = "Dinner",
+                Value = "2",
+            },new SelectListItem
+            {
+                Text = "Supper",
+                Value = "3",
+            },new SelectListItem
+            {
+                Text = "Snack",
+                Value = "4",
+            },new SelectListItem
+            {
+                Text = "General",
+                Value = "5",
+                }}, "Select meal category", new {@class="form-control"})
+            </td>
+        </tr>
+
+		      <tr>
+            <td><div style="margin-top:6px">Default unit</div></td>
+            <td>       
+            @Html.DropDownListFor(m => m.DefaultUnit, new List<SelectListItem> {
+                new SelectListItem
+            {
+                Text = "Portion",
+                Value = "0"
+            },new SelectListItem
+            {
+                Text = "Psc",
+                Value = "1",
+            },new SelectListItem
+            {
+                Text = "Ml",
+                Value = "2",
+            },new SelectListItem
+            {
+                Text = "Cl",
+                Value = "3",
+            },new SelectListItem
+            {
+                Text = "Dl",
+                Value = "4",
+            },new SelectListItem
+            {
+                Text = "L",
+                Value = "5",
+                },new SelectListItem
+            {
+                Text = "Mg",
+                Value = "6",
+                }, new SelectListItem
+            {
+                Text = "G",
+                Value = "7",
+                },new SelectListItem
+            {
+                Text = "Hg",
+                Value = "8",
+                },new SelectListItem
+            {
+                Text = "Kg",
+                Value = "9",
+                }
+			
+				}, "Select default unit", new {@class="form-control"})
+            </td>
+        </tr>
+		<tr>
+            <td><div style="margin-top:6px">Image path</div></td>
+            <td>@Html.TextBoxFor(m => m.ImagePath, new {@class="form-control"})</td>
+        </tr>
+        <tr>
+            <td><div style="margin-top:6px">Kilo calories</div></td>
+            <td>@Html.TextBoxFor(m => m.Nutrients.Kilocalories, new {@class="form-control"})</td>
+        </tr>
+        <tr>
+            <td><div style="margin-top:6px">Water</div></td>
+            <td>@Html.TextBoxFor(m => m.Nutrients.Water, new {@class="form-control"})</td>
+        </tr>
+        <tr>
+            <td><div style="margin-top:6px">Edible part</div></td>
+            <td>@Html.TextBoxFor(m => m.Nutrients.EdiblePart, new {@class="form-control"})</td>
+        </tr>
+        <tr>
+            <td><div style="margin-top:6px">Fibre</div></td>
+            <td>@Html.TextBoxFor(m => m.Nutrients.DietaryFibre, new {@class="form-control"})</td>
+        </tr>
+        <tr>
+            <td><div style="margin-top:6px">Fat</div></td>
+            <td>@Html.TextBoxFor(m => m.Nutrients.Fat, new {@class="form-control"})</td>
+        </tr>
+        <tr>
+            <td><div style="margin-top:6px">Carbohydrate</div></td>
+            <td>@Html.TextBoxFor(m => m.Nutrients.Carbohydrate, new {@class="form-control"})</td>
+        </tr>
+		<tr>
+            <td><div style="margin-top:6px"></div></td>
+            <td><button type="submit" class="btn btn-outline-success">Save</button></td>
+        </tr>
+		
+		}
+
+        </table>
+</div>

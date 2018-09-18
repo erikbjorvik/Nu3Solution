@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nu3.Api", "Nu3.Api\Nu3.Api.csproj", "{100726FA-A745-40A4-A82F-F0D8F06A6C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nu3.Client", "Nu3.Client\Nu3.Client.csproj", "{F2170E7D-FF11-4833-B716-5EB62376CAFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{100726FA-A745-40A4-A82F-F0D8F06A6C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100726FA-A745-40A4-A82F-F0D8F06A6C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100726FA-A745-40A4-A82F-F0D8F06A6C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100726FA-A745-40A4-A82F-F0D8F06A6C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2170E7D-FF11-4833-B716-5EB62376CAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2170E7D-FF11-4833-B716-5EB62376CAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2170E7D-FF11-4833-B716-5EB62376CAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2170E7D-FF11-4833-B716-5EB62376CAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

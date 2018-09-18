@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Beacons</h2>
+
+<div class="row" style="margin-bottom:20px">
+    <div class="col-md-6">
+        <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add beacon
+        </button>
+    </div>
+    <div class="col-md-6" style="text-align:right">
+        <input type="text" class="form-control" placeholder="Search for beacon" style="display:inline">
+        <button class="btn btn-default" type="button">Search</button>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Location</th>
+        <th>UUID</th>
+        <th>Edit</th>
+    </tr>
+
+    <tr>
+        <td>
+            1st floor cafeteria, table #1.
+        </td>
+        <td>
+            5112-6925-6910-9612
+        </td>
+        <td>
+            <a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        </td>
+    </tr>
+
+
+</table>

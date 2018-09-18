@@ -1,0 +1,96 @@
+@model IEnumerable<Nu3.Models.User>
+<div class="row">
+    <div class="col-md-12"><h2>Users</h2></div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <button type="button" class="btn btn-outline-success">Add user</button>
+    </div>
+    <div class="col-md-6" style="text-align:right">
+        <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search for user" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  </div>
+</div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Surname</th>
+        <th>Firstname</th>
+        <th>Energy risk category</th>
+        <th>Details</th>
+        <th>Reports</th>
+    </tr>
+    </thead>
+    @foreach(var user in Model) {
+    <tr>
+        <td>
+            <span class="data-txt">@user.SocialSecurityNumber</span>
+        </td>
+        <td>
+            @user.Lastname
+        </td>
+        <td>
+            @user.Firstname
+        </td>
+        <td>
+            <span class="badge badge-danger">Low energy consumption</span>
+        </td>
+        <td>
+            <a href="@Url.Action("Edit","Users", new { id=@user.Id})"><i class="fas fa-edit"></i> Details</a>
+        </td>
+        <td>
+            <a href="@Url.Action("Report","Users", new { id=@user.Id})"><i class="fas fa-chart-pie"></i> See reports</a>
+        </td>
+    </tr>
+	}
+
+    <tr>
+        <td>
+            260491 48973
+        </td>
+        <td>
+            Bjorvik
+        </td>
+        <td>
+            Erik
+        </td>
+        <td>
+            <span class="badge badge-success">Balanced consumption</span>
+        </td>
+        <td>
+            <a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        </td>
+        <td>
+            <a href="#">See reports</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            260491 48973
+        </td>
+        <td>
+            Bjorvik
+        </td>
+        <td>
+            Erik
+        </td>
+        <td>
+            <span class="badge badge-secondary">Inactive</span>
+        </td>
+        <td>
+            <a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        </td>
+        <td>
+            <a href="#">See reports</a>
+        </td>
+    </tr>
+
+
+</table>
