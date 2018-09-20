@@ -12,3 +12,17 @@
 /Users/erikbjorvik/Projects/Nu3/Nu3.Client/obj/Debug/netcoreapp2.0/Nu3.Client.AssemblyInfo.cs
 /Users/erikbjorvik/Projects/Nu3/Nu3.Client/obj/Debug/netcoreapp2.0/Nu3.Client.dll
 /Users/erikbjorvik/Projects/Nu3/Nu3.Client/obj/Debug/netcoreapp2.0/Nu3.Client.pdb
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Client.deps.json
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Client.runtimeconfig.json
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Client.runtimeconfig.dev.json
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Client.dll
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Client.pdb
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Api.dll
+C:\Nu3Solution\Nu3.Client\bin\Debug\netcoreapp2.0\Nu3.Api.pdb
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.csprojAssemblyReference.cache
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.csproj.CoreCompileInputs.cache
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.AssemblyInfoInputs.cache
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.AssemblyInfo.cs
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.csproj.CopyComplete
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.dll
+C:\Nu3Solution\Nu3.Client\obj\Debug\netcoreapp2.0\Nu3.Client.pdb

@@ -45,6 +45,11 @@ namespace Nu3Admin.Controllers
                 });
 		}
 
+        public ActionResult AppIndex()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Add(IntakeInputModel model, string id) {
             
